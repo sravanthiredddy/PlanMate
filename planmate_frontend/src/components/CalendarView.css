@@ -1,0 +1,103 @@
+.calendar-view {
+  background: rgba(255, 255, 255, 0.34);
+  padding: 24px;
+  border-radius: 28px;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  margin-bottom: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: #10233f;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.calendar-title {
+  margin: 0 0 18px;
+  color: #10233f;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.calendar-nav button {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  cursor: pointer;
+  border-radius: 14px;
+  color: #10233f;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-nav button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 6px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.45);
+  color: #0f172a;
+}
+
+.calendar-day {
+  min-height: 96px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 10px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calendar-day-number {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.calendar-task {
+  font-size: 12px;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(56, 189, 248, 0.2));
+  padding: 4px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #10233f;
+}
+
+.calendar-day.empty {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    gap: 8px;
+  }
+
+  .calendar-day {
+    min-height: 72px;
+    padding: 8px;
+  }
+}

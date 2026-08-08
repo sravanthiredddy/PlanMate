@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+  <defs>
+    <style>
+      .title { font: 700 24px 'Times New Roman', serif; fill: #111; }
+      .caption { font: 700 20px 'Times New Roman', serif; fill: #111; }
+      .caption-sub { font: 400 20px 'Times New Roman', serif; fill: #111; }
+      .label { font: 600 18px Arial, sans-serif; fill: #111; }
+      .small { font: 500 16px Arial, sans-serif; fill: #111; }
+      .box { fill: #fff; stroke: #111; stroke-width: 2; }
+      .ellipse { fill: #fff; stroke: #111; stroke-width: 2; }
+      .line { stroke: #111; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#111" />
+    </marker>
+  </defs>
+
+  <text x="700" y="36" text-anchor="middle" class="title">System Architecture of PlanMate Task Tracker</text>
+
+  <rect x="220" y="70" width="960" height="240" class="box" />
+  <text x="700" y="92" text-anchor="middle" class="label">Frontend: React SPA</text>
+
+  <ellipse cx="700" cy="125" rx="90" ry="22" class="ellipse" />
+  <text x="700" y="131" text-anchor="middle" class="small">React Components</text>
+
+  <text x="700" y="170" text-anchor="middle" class="small">Feature Modules</text>
+  <rect x="230" y="160" width="940" height="85" class="box" />
+
+  <ellipse cx="330" cy="202" rx="86" ry="22" class="ellipse" />
+  <text x="330" y="208" text-anchor="middle" class="small">Welcome / Auth</text>
+
+  <ellipse cx="500" cy="202" rx="82" ry="22" class="ellipse" />
+  <text x="500" y="208" text-anchor="middle" class="small">Task Creation</text>
+
+  <ellipse cx="700" cy="202" rx="105" ry="22" class="ellipse" />
+  <text x="700" y="208" text-anchor="middle" class="small">Task List &amp; Filter/Search</text>
+
+  <ellipse cx="905" cy="202" rx="86" ry="22" class="ellipse" />
+  <text x="905" y="208" text-anchor="middle" class="small">Calendar View</text>
+
+  <ellipse cx="1080" cy="202" rx="72" ry="22" class="ellipse" />
+  <text x="1080" y="208" text-anchor="middle" class="small">Profile / AI</text>
+
+  <ellipse cx="700" cy="270" rx="105" ry="22" class="ellipse" />
+  <text x="700" y="276" text-anchor="middle" class="small">Local Storage / User State</text>
+
+  <ellipse cx="700" cy="332" rx="86" ry="22" class="ellipse" />
+  <text x="700" y="338" text-anchor="middle" class="small">Fetch / Axios API Client</text>
+
+  <path d="M700 147 L700 180" class="line" />
+  <path d="M640 140 C560 150, 440 165, 355 182" class="line" />
+  <path d="M675 145 C615 154, 550 166, 520 181" class="line" />
+  <path d="M725 145 C785 154, 850 166, 880 181" class="line" />
+  <path d="M760 140 C860 150, 980 165, 1055 182" class="line" />
+
+  <path d="M330 224 C410 242, 540 252, 640 263" class="line" />
+  <path d="M500 224 C565 242, 620 252, 670 262" class="line" />
+  <path d="M700 224 L700 248" class="line" />
+  <path d="M905 224 C840 242, 780 252, 730 262" class="line" />
+  <path d="M1080 224 C980 242, 850 252, 760 263" class="line" />
+  <path d="M700 292 L700 310" class="line" />
+
+  <text x="700" y="372" text-anchor="middle" class="small">REST API</text>
+  <path d="M700 354 L700 392" class="line" />
+
+  <rect x="80" y="392" width="1240" height="176" class="box" />
+  <text x="700" y="414" text-anchor="middle" class="label">Backend: Spring Boot REST API</text>
+
+  <ellipse cx="700" cy="458" rx="160" ry="22" class="ellipse" />
+  <text x="700" y="464" text-anchor="middle" class="small">Security / Validation / BCrypt / Global Exception Handler</text>
+
+  <text x="700" y="504" text-anchor="middle" class="small">Controllers &amp; Features</text>
+  <rect x="90" y="492" width="1220" height="58" class="box" />
+
+  <ellipse cx="235" cy="522" rx="86" ry="22" class="ellipse" />
+  <text x="235" y="528" text-anchor="middle" class="small">User Management</text>
+
+  <ellipse cx="455" cy="522" rx="86" ry="22" class="ellipse" />
+  <text x="455" y="528" text-anchor="middle" class="small">Task Management</text>
+
+  <ellipse cx="700" cy="522" rx="94" ry="22" class="ellipse" />
+  <text x="700" y="528" text-anchor="middle" class="small">AI Assistant Planning</text>
+
+  <ellipse cx="930" cy="522" rx="90" ry="22" class="ellipse" />
+  <text x="930" y="528" text-anchor="middle" class="small">Password Reset Flow</text>
+
+  <ellipse cx="1135" cy="522" rx="86" ry="22" class="ellipse" />
+  <text x="1135" y="528" text-anchor="middle" class="small">Mail / Scheduler</text>
+
+  <path d="M700 480 L700 500" class="line" />
+  <path d="M630 476 C530 488, 365 498, 260 507" class="line" />
+  <path d="M670 478 C600 490, 515 500, 478 507" class="line" />
+  <path d="M730 478 C800 490, 885 500, 905 507" class="line" />
+  <path d="M770 476 C900 488, 1040 498, 1110 507" class="line" />
+
+  <text x="700" y="602" text-anchor="middle" class="small">Data &amp; External Services</text>
+
+  <rect x="170" y="616" width="760" height="180" class="box" />
+  <text x="550" y="638" text-anchor="middle" class="label">Database &amp; Storage</text>
+
+  <ellipse cx="285" cy="690" rx="78" ry="22" class="ellipse" />
+  <text x="285" y="696" text-anchor="middle" class="small">Users Table</text>
+
+  <ellipse cx="475" cy="690" rx="76" ry="22" class="ellipse" />
+  <text x="475" y="696" text-anchor="middle" class="small">Tasks Table</text>
+
+  <ellipse cx="550" cy="760" rx="90" ry="22" class="ellipse" />
+  <text x="550" y="766" text-anchor="middle" class="small">MySQL Database</text>
+
+  <ellipse cx="690" cy="690" rx="92" ry="22" class="ellipse" />
+  <text x="690" y="696" text-anchor="middle" class="small">JPA Repositories</text>
+
+  <ellipse cx="845" cy="690" rx="58" ry="22" class="ellipse" />
+  <text x="845" y="696" text-anchor="middle" class="small">User / Task</text>
+
+  <path d="M235 544 C250 600, 275 640, 284 667" class="line" />
+  <path d="M455 544 C460 600, 470 640, 474 667" class="line" />
+  <path d="M700 544 C698 600, 694 640, 691 667" class="line" />
+  <path d="M930 544 C860 600, 760 640, 713 668" class="line" />
+
+  <path d="M285 712 C360 735, 445 748, 520 756" class="line" />
+  <path d="M475 712 C500 730, 525 744, 540 752" class="line" />
+  <path d="M690 712 C650 730, 610 744, 575 752" class="line" />
+  <path d="M845 712 C760 735, 660 748, 585 756" class="line" />
+
+  <ellipse cx="1080" cy="690" rx="100" ry="22" class="ellipse" />
+  <text x="1080" y="696" text-anchor="middle" class="small">Groq AI API Service</text>
+
+  <ellipse cx="1080" cy="760" rx="92" ry="22" class="ellipse" />
+  <text x="1080" y="766" text-anchor="middle" class="small">SMTP Mail Service</text>
+
+  <path d="M700 544 C820 590, 980 630, 1060 668" class="line" />
+  <path d="M1135 544 C1120 600, 1098 640, 1084 738" class="line" />
+
+  <text x="700" y="875" text-anchor="middle" class="caption">Fig. 3.1</text>
+  <text x="792" y="875" text-anchor="middle" class="caption-sub">System Architecture of the PlanMate Task Tracker</text>
+</svg>
